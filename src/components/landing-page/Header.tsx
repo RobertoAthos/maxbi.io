@@ -4,7 +4,7 @@ import logo from "../../public/logo.svg";
 
 export default function Header() {
 	return (
-		<header className="w-full py-6 shadow-md">
+		<header className="w-full py-6 border-b-2">
 			<div className="w-full max-w-screen-xl m-auto flex justify-between px-16 items-center">
 				<Image src={logo} alt="Logo da empresa" width={120} height={120} />
 				<nav>

@@ -1,3 +1,4 @@
+import { DotBackgroundDemo } from "@/components/Background";
 import FAQS from "@/components/landing-page/FAQS/FAQS";
 import Footer from "@/components/landing-page/Footer";
 import Header from "@/components/landing-page/Header";
@@ -10,13 +11,15 @@ export default function Home() {
 	return (
 		<>
 			<Header />
-			<main>
-				<HeroSection />
-				<Services />
-				<Highlight />
-				<ProcessSteps />
-				<FAQS />
-			</main>
+			<DotBackgroundDemo>
+				<article className="relative z-50">
+					<HeroSection />
+					<Services />
+					<Highlight />
+					<ProcessSteps />
+					<FAQS />
+				</article>
+			</DotBackgroundDemo>
 			<Footer />
 		</>
 	);
