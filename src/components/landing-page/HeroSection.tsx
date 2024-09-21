@@ -5,6 +5,7 @@ import hero from "@/public/hero.svg";
 import vector from "@/public/hero-vector.svg";
 import { LuArrowRight } from "react-icons/lu";
 import AnimationReveal from "../AnimationReveal";
+import { sendToWhatsApp } from "@/helpers/sendToWhatsApp";
 export default function HeroSection() {
 	return (
 		<section className="w-full max-w-screen-xl m-auto flex flex-col lg:flex-row justify-between gap-x-8 items-center">
@@ -28,6 +29,7 @@ export default function HeroSection() {
 						<div className="text-center lg:text-left">
 							<button
 								type="button"
+								onClick={()=>sendToWhatsApp()}
 								className="py-2.5 px-8 rounded-full bg-dark-primary text-white hover:underline"
 							>
 								Começar agora
@@ -44,7 +46,7 @@ export default function HeroSection() {
 						alt="Hero"
 						width={500}
 						height={500}
-						className="w-full h-full"
+						className="w-full h-full object-contain rounded-bl-[10rem]"
 					/>
 				</AnimationReveal>
 			</picture>

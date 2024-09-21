@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { features } from "./featureCard/data";
 import FeatureCard from "./featureCard";

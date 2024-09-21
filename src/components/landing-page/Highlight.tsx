@@ -1,8 +1,10 @@
+"use client"
 import React from "react";
 import cards from "@/public/cards-hl.svg";
 import Image from "next/image";
 import { LuArrowRight } from "react-icons/lu";
 import AnimationReveal from "../AnimationReveal";
+import { sendToWhatsApp } from "@/helpers/sendToWhatsApp";
 
 export default function Highlight() {
 	return (
@@ -19,6 +21,7 @@ export default function Highlight() {
 						<div className="text-center md:text-left">
 							<button
 								type="button"
+								onClick={()=>sendToWhatsApp()}
 								className="bg-dark-primary hover:underline text-white py-3 px-8 rounded-md"
 							>
 								Começar agora
