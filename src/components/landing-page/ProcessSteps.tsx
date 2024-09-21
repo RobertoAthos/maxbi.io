@@ -3,40 +3,52 @@ import Image from "next/image";
 import dash from "@/public/dash.jpg";
 
 export default function ProcessSteps() {
-	return (
-		<section className="w-full mt-48 max-w-screen-xl m-auto px-8">
-			<h3 className="text-center text-5xl font-semibold">
-				Como transformamos <span className="text-primary">seu negócio</span>
-			</h3>
+  return (
+    <section className="w-full mt-48 max-w-screen-xl m-auto px-8">
+      <h3 className="text-center text-5xl font-semibold">
+        Como transformamos <span className="text-primary">seu negócio</span>
+      </h3>
 
-			<article className="w-ful flex justify-between items-center mt-24">
-				<ul className="space-y-6">
-					<li className="text-gray-600 list-decimal font-medium text-xl">
-						<span className="text-primary">Onboarding Completo:</span><br/>{" "}
-						Entendemos sua empresa profundamente.
-					</li>
-					<li className="text-gray-600 list-decimal font-medium text-xl">
-						<span className="text-primary">Acesso Total aos Dados:</span><br/>{" "}
-						Coletamos e cruzamos informações de todas as fontes.
-					</li>
-					<li className="text-gray-600 list-decimal font-medium text-xl">
-						<span className="text-primary">Técnicas Avançadas de B.I.:</span><br/>{" "}
-						Aplicamos métodos de análise de ponta.
-					</li>
+      <article className="w-full flex flex-col lg:flex-row justify-center mt-24 space-y-8 lg:space-y-0 lg:space-x-12">
+        <figure className="flex justify-center">
+          <Image src={dash} alt="process" width={500} height={500} />
+        </figure>
 
-					<li className="text-gray-600 list-decimal font-medium text-xl">
-						<span className="text-primary">Dashboard Personalizado:</span><br/>{" "}
-						Decisões estratégicas à distância de um clique.
-					</li>
-					<li className="text-gray-600 list-decimal font-medium text-xl">
-						<span className="text-primary">Implementação da Solução:</span><br/>{" "}
-						Vamos além da dash, queremos resolver seu problema!
-					</li>
-				</ul>
-				<figure>
-					<Image src={dash} alt="process" width={500} height={500} />
-				</figure>
-			</article>
-		</section>
-	);
+        <ul className="grid grid-cols-1 lg:grid-cols-2 justify-items-center items-center gap-8">
+          <li className="w-64 bg-white text-gray-600 font-medium text-xl list-decimal">
+            <span className="text-primary text-base">Onboarding Completo:</span>
+            <br />
+            <p className="text-sm">Entendemos sua empresa profundamente.</p>
+          </li>
+          <li className="w-64 bg-white text-gray-600 font-medium text-xl list-decimal">
+            <span className="text-primary text-base">Acesso Total aos Dados:</span>
+            <br />
+            <p className="text-sm">
+              Coletamos e cruzamos informações de todas as fontes.
+            </p>
+          </li>
+          <li className="w-64 bg-white text-gray-600 font-medium text-xl list-decimal">
+            <span className="text-primary text-base">Técnicas Avançadas de B.I.:</span>
+            <br />
+            <p className="text-sm">Aplicamos métodos de análise de ponta.</p>
+          </li>
+
+          <li className="w-64 bg-white text-gray-600 font-medium text-xl list-decimal">
+            <span className="text-primary text-base">Dashboard Personalizado:</span>
+            <br />
+            <p className="text-sm">
+              Decisões estratégicas à distância de um clique.
+            </p>
+          </li>
+          <li className="w-64 bg-white text-gray-600 font-medium text-xl list-decimal">
+            <span className="text-primary text-base">Implementação da Solução:</span>
+            <br />
+            <p className="text-sm">
+              Vamos além da dash, queremos resolver seu problema!
+            </p>
+          </li>
+        </ul>
+      </article>
+    </section>
+  );
 }

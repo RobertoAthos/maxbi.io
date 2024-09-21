@@ -6,7 +6,7 @@ export default function Services() {
 	return (
 		<section className="w-full max-w-screen-xl m-auto flex justify-between gap-x-8 items-center pt-32">
 			<article className="w-full flex justify-center flex-col gap-y-8 items-center">
-				<div className="bg-primary text-white rounded-full px-8 py-2">
+				<div className="bg-gradient-to-r from-[#6DACE7] to-[#2764F5] text-white rounded-full px-8 py-2">
 					<span className="text-lg">Serviços</span>
 				</div>
 				<h3 className="text-5xl text-center font-semibold">
