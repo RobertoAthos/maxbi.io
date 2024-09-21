@@ -19,7 +19,7 @@ export default function Services() {
 					<h3 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold">
 						Na{" "}
 						<strong>
-							max<span className="text-primary">.BI</span>
+							max<span className="text-primary">.Bi</span>
 						</strong>
 						, não vendemos relatórios<span className="text-primary">...</span>
 						<br />
@@ -34,8 +34,8 @@ export default function Services() {
 						</p>
 					</div>
 				</AnimationReveal>
-				<AnimationReveal>
-					<div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 mt-24">
+				<AnimationReveal className="w-full flex justify-center items-center">
+					<div className="w-full pb-12 grid items-center grid-cols-1 lg:grid-cols-2 gap-12  md:gap-16 mt-24">
 						{features.map((feature) => (
 							<FeatureCard
 								description={feature.description}
