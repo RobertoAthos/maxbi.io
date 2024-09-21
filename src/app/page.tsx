@@ -7,6 +7,8 @@ import Highlight from "@/components/landing-page/Highlight";
 import ProcessSteps from "@/components/landing-page/ProcessSteps";
 import Services from "@/components/landing-page/Services";
 
+export const runtime = "edge"
+
 export default function Home() {
 	return (
 		<>
