@@ -4,6 +4,7 @@ import Image from "next/image";
 import logo from "../../public/logo.svg";
 import useScrollToView from "@/hooks/useScrollToView";
 import { IoIosClose, IoIosMenu, IoMdClose } from "react-icons/io";
+import { sendToWhatsApp } from "@/helpers/sendToWhatsApp";
 
 export default function Header() {
 	const { scrollToSection } = useScrollToView();
@@ -32,6 +33,7 @@ export default function Header() {
 
 						<button
 							type="button"
+							onClick={()=>sendToWhatsApp()}
 							className="py-2.5 px-8 rounded-full bg-dark-primary text-white hover:underline"
 						>
 							Contato
