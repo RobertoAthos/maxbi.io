@@ -8,8 +8,11 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "max.Bi | Soluções com Business Intelligence, Business Analytics e Análise de Dados",
+  title: "Max.Bi | Soluções com Business Intelligence, Business Analytics e Análise de Dados",
   description: "Somos uma software house especializada em Business Intelligence, Business Analytics e integração de dados. Transforme seus dados em decisões estratégicas com dashboards personalizados e insights poderosos.",
+  twitter:{
+    card: 'summary_large_image',
+  }
 };
 
 export default function RootLayout({
