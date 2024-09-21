@@ -21,7 +21,7 @@ export default function DropdownFaq({
         role="button"
         tabIndex={0}
       >
-        <h5 className="text-xl text-white font-semibold">{title}</h5>
+        <h5 className="text-base md:text-xl text-white font-semibold">{title}</h5>
         <MdOutlineKeyboardArrowDown
           size={30}
           className={`text-white transform transition-transform duration-300 ${

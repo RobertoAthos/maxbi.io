@@ -5,15 +5,15 @@ import AnimationReveal from "../AnimationReveal";
 
 export default function ProcessSteps() {
 	return (
-		<section className="w-full mt-48 max-w-screen-xl m-auto px-8">
+		<section className="w-full mt-24 md:mt-48 max-w-screen-xl m-auto px-8">
 			<AnimationReveal className="pb-2">
 				{" "}
-				<h3 className="text-center text-5xl font-semibold">
+				<h3 className="text-center text-3xl lg:text-5xl font-semibold">
 					Como transformamos <span className="text-primary">seu negócio</span>
 				</h3>
 			</AnimationReveal>
 
-			<article className="w-full flex flex-col lg:flex-row justify-center mt-24 space-y-8 lg:space-y-0 lg:space-x-12">
+			<article className="w-full flex flex-col gap-x-8 lg:flex-row justify-center mt-24 space-y-8 lg:space-y-0 lg:space-x-12">
 				<figure className="flex justify-center">
 					<AnimationReveal>
 						<Image src={dash} alt="process" width={500} height={500} />

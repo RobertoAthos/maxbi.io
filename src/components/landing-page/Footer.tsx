@@ -13,16 +13,16 @@ export default function Footer() {
 		});
 	};
 	return (
-		<footer className="w-full px-16 py-12 mt-96 border-t-2">
-			<div className="w-full max-w-screen-xl m-auto flex items-center justify-between">
-				<div className="space-y-2">
+		<footer className="w-full px-8 md:px-16 py-12 mt-12 md:mt-96 border-t-2">
+			<div className="w-full max-w-screen-xl m-auto flex flex-col md:flex-row items-center justify-between">
+				<div className="flex flex-col justify-center items-center space-y-2">
 					<figure className="pb-3">
-						<Image src={logo} alt="logo" width={200} height={200} />
+						<Image src={logo} alt="logo" width={150} height={150} />
 					</figure>
-					<span>Copyright © 2024 max.BI. Todos os direitos reservados.</span>
+					<span className="text-xs text-center">Copyright © 2024 max.BI. Todos os direitos reservados.</span>
 				</div>
-				<div className="flex gap-x-8">
-					<div className="flex gap-x-2">
+				<div className="flex flex-col md:flex-row gap-x-8">
+					<div className="flex gap-x-2 mt-6 md:mt-0">
 						<FaWhatsapp
 							size={30}
 							className="cursor-pointer hover:text-gray-400"

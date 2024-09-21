@@ -12,7 +12,7 @@ export default function Home() {
 		<>
 			<Header />
 			<DotBackgroundDemo>
-				<article className="relative z-50">
+				<article className="relative z-10">
 					<HeroSection />
 					<Services />
 					<Highlight />

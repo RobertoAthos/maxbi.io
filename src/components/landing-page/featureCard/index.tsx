@@ -11,7 +11,12 @@ export default function FeatureCard({
 			{React.createElement(iconElement, { className: "text-primary text-4xl" })}
 			<h4 className="text-2xl font-semibold">{title}</h4>
 			<p className="text-sm">{description}</p>
-			<button type="button" className="bg-dark-primary hover:underline text-white py-2 px-8 rounded-md">Falar com especialista</button>
+			<button
+				type="button"
+				className="bg-dark-primary hover:underline text-white py-2 px-8 rounded-md"
+			>
+				Falar com especialista
+			</button>
 		</div>
 	);
 }
