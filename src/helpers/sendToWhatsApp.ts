@@ -1,5 +1,4 @@
 export function sendToWhatsApp(message = 'Olá, gostaria de saber mais sobre os serviços da Max B.i.'): void {
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://web.whatsapp.com/send?phone='5573999335493'&text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/557399629569?text=${message}`;
     window.open(whatsappUrl, '_blank');
 }
