@@ -5,6 +5,7 @@ import logo from "@/public/logo.svg";
 import { IoArrowUpCircle } from "react-icons/io5";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
+import { sendToWhatsApp } from "@/helpers/sendToWhatsApp";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -28,6 +29,7 @@ export default function Footer() {
           <div className="flex gap-x-2 mt-6 md:mt-0">
             <FaWhatsapp
               size={30}
+              onClick={()=>sendToWhatsApp()}
               className="cursor-pointer hover:text-gray-400"
             />
             <Link href='https://www.instagram.com/maxbi.io?igsh=anNpbGtoZnN3N3Rr' target="_blank">
