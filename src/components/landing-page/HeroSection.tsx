@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import hero from "@/public/hero.svg";
 import vector from "@/public/hero-vector.svg";
+import { LuArrowRight } from "react-icons/lu";
 export default function HeroSection() {
 	return (
 		<section className="w-full max-w-screen-xl m-auto flex justify-between gap-x-8 items-center">
@@ -21,6 +22,7 @@ export default function HeroSection() {
 					className="py-2.5 px-8 rounded-full bg-dark-primary text-white hover:underline"
 				>
 					Começar agora
+					<LuArrowRight className="inline ml-2"/>
 				</button>
 			</article>
 			<picture className="w-full h-full">
