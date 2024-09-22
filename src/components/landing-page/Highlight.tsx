@@ -1,6 +1,5 @@
 "use client"
 import React from "react";
-import cards from "@/public/cards-hl.svg";
 import Image from "next/image";
 import { LuArrowRight } from "react-icons/lu";
 import AnimationReveal from "../AnimationReveal";
@@ -32,7 +31,7 @@ export default function Highlight() {
 				</AnimationReveal>
 				<figure className="mt-10 md:mt-0">
 					<AnimationReveal>
-						<Image src={cards} alt="cards" width={500} height={500} />
+						<Image src='/cards-hl.svg' alt="cards" width={500} height={500} />
 					</AnimationReveal>
 				</figure>
 			</article>
