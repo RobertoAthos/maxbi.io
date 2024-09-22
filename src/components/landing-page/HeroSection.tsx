@@ -1,11 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import hero from "@/public/hero.svg";
-import vector from "@/public/hero-vector.svg";
 import { LuArrowRight } from "react-icons/lu";
 import AnimationReveal from "../AnimationReveal";
 import { sendToWhatsApp } from "@/helpers/sendToWhatsApp";
+
 export default function HeroSection() {
 	return (
 		<section className="w-full max-w-screen-xl m-auto flex flex-col lg:flex-row justify-between gap-x-8 items-center">
@@ -17,9 +16,11 @@ export default function HeroSection() {
 							dados
 						</h2>
 						<Image
-							src={vector}
+							src='/hero-vector.svg'
 							alt="vector"
-							className="absolute right-[80px] lg:right-6 top-8 lg:top-[80px]"
+							width={300}
+							height={300}
+							className="w-auto h-auto absolute right-[80px] lg:right-6 top-8 lg:top-[80px]"
 						/>
 						<p className="text-sm md:text-lg text-center lg:text-left pt-4">
 							Você está perdendo oportunidades valiosas ao não usar seus dados
@@ -42,7 +43,7 @@ export default function HeroSection() {
 			<picture className="w-full h-full mt-10 lg:mt-0">
 				<AnimationReveal>
 					<Image
-						src={hero}
+						src='/hero.svg'
 						alt="Hero"
 						width={500}
 						height={500}

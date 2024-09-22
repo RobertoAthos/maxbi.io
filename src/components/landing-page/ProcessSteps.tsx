@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import dash from "@/public/dash.jpg";
 import AnimationReveal from "../AnimationReveal";
 import { LuArrowRight } from "react-icons/lu";
 import { sendToWhatsApp } from "@/helpers/sendToWhatsApp";
@@ -19,7 +18,7 @@ export default function ProcessSteps() {
       <article className="w-full flex flex-col gap-x-8 lg:flex-row justify-center mt-24 space-y-8 lg:space-y-0 lg:space-x-12">
         <figure className="flex justify-center">
           <AnimationReveal>
-            <Image src={dash} alt="process" width={500} height={500} />
+            <Image src='/dash.jpg' alt="process" width={500} height={500} />
           </AnimationReveal>
         </figure>
 

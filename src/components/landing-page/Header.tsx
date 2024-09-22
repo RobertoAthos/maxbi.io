@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import logo from "../../public/logo.svg";
 import useScrollToView from "@/hooks/useScrollToView";
 import { IoIosClose, IoIosMenu, IoMdClose } from "react-icons/io";
 import { sendToWhatsApp } from "@/helpers/sendToWhatsApp";
@@ -13,7 +12,7 @@ export default function Header() {
 	return (
 		<header className="w-full py-6 border-b-2">
 			<div className="w-full max-w-screen-xl m-auto flex justify-between px-8 md:px-16 items-center">
-				<Image src={logo} alt="Logo da empresa" width={120} height={120} />
+				<Image src='/logo.svg' alt="Logo da empresa" width={120} height={120} />
 				<nav className="hidden lg:block">
 					<ul className="flex gap-x-8 items-center">
 						<li
@@ -51,7 +50,7 @@ export default function Header() {
 				{openMobileNav && (
 					<nav className="fixed top-0 left-0 w-full h-screen bg-white text-black flex flex-col items-center p-6 z-50">
 						<div className="flex justify-between w-full mb-10">
-							<Image src={logo} alt="Soma Logo" width={70} height={70} />
+							<Image src='/logo.svg' alt="Soma Logo" width={70} height={70} />
 							<IoMdClose
 								size={32}
 								className="cursor-pointer"
